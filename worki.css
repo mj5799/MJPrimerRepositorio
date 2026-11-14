@@ -1,0 +1,226 @@
+/* ==========================================
+   1. ESTILOS GLOBALES
+   ========================================== */
+body {
+    font-family: 'Arial Black', sans-serif;
+    margin: 10px;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* ==========================================
+   2. ENCABEZADO (HEADER)
+   ========================================== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+    background-color: white;
+}
+
+/* Logo */
+.Logo_Worki img {
+    width: 300px;
+    height: auto;
+}
+
+/* Menú de navegación central */
+.Navegacion_superior {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    display: flex;
+    gap: 30px;
+    margin-left: -700px;
+    margin-right: 40px;
+    text-decoration: underline #2963b6;
+    
+}
+
+.Navegacion_superior a,
+.Navegacion_superior a:visited {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* ==========================================
+   3. BOTONES DEL ENCABEZADO
+   ========================================== */
+header button {
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 8px;
+    border: 2px solid #2563eb;
+}
+
+/* Botón 1: Iniciar sesión (transparente) */
+header button:nth-of-type(1) {
+    background-color: transparent;
+    color: #2563eb;
+}
+
+/* Botón 2: Regístrate (relleno azul) */
+header button:nth-of-type(2) {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+/* ==========================================
+    Viñeta1
+   ========================================== */
+
+.Viñeta2 {
+  font-weight: 200;
+  margin-bottom: -66px;
+    margin-top: 0px;
+    margin-left: 527px;
+    margin-right: 0px;
+}
+
+/* ==========================================
+   B. TEXTO CENTRAL
+   ========================================== */
+.Texto_medio {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 40px;
+    color: #263f76;
+    line-height: 0.95;
+    margin-bottom: 0px;
+}
+
+.Futuro {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 100px;
+    margin-left: 0px;
+    margin-right: 40px;
+    color: #2563eb;
+    display: inline-block;
+    margin-top: 5px;  
+    margin-bottom: 0px;
+}
+/* ==========================================
+   2 Viñeta2
+   ========================================== */
+   .Viñeta {
+  font-weight: 200;
+    margin-top: -50px;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+/* ==========================================
+   2 Texto secundario
+   ========================================== */
+.Segunda_frase {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 25px;
+    margin-top: -20px;
+    margin-left: 10px;
+    margin-right: 40px;
+    color: #263f76;
+
+}
+
+/* ==========================================
+   C. Busqueda
+   ========================================== */
+.Barra_de_busqueda {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 8px 8px 8px 20px; /* Espacio interno para que no pegue a las orillas */
+    border-radius: 50px;       /* Esto hace la forma de pastilla/cápsula perfecta */
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08); /* Sombra elegante */
+    max-width: 750px;
+    margin: 25px 0px;
+    border: 1px solid #f1f5f9;
+}
+
+.Campo_de_busqueda {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 10px;
+}
+
+.Barra_de_busqueda input[type="text"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #1e467e;
+    background: transparent;
+}
+
+.Barra_de_busqueda input::placeholder {
+    color: #94a3b8;
+    font-weight: 400;
+}
+
+.Barra_de_busqueda div[separador], 
+.campo-busqueda + .campo-busqueda {
+    border-left: 1px solid #e2e8f0;
+    height: 30px;
+    margin: 0 15px;
+}
+
+.Barra_de_busqueda button {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* ==========================================
+   D. Caracteristicas decorativas
+   ========================================== */
+.Contenedor_de_caracteristicas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    background-color: #ffffff;
+}
+
+.Caracteristicas {  
+    display: flex;    
+    align-items: center;    
+    gap: 15px;                
+    flex: 1;                 
+    justify-content: center;
+}
+
+.Texto_de_caracteristicas {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1e467e;
+}
+
+.icono_caracteristica {
+    font-size: 24px;
+}
+
+.separador-vertical {
+    width: 1px;  
+    height: 35px;     
+    background-color: #1e467e;
+}
